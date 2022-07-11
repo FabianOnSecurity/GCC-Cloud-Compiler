@@ -21,7 +21,7 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-key = "c0b2a84be4caa1f21687e3f31113dd28a38cec505ee53c782da97c8ac9564b8b"
+key = "" # CHANGE THIS! Secret Key to protect WebServer (256-Bit recommended)
 def hash_sha512(input_data):
     hash = hashlib.sha512( str(input_data).encode("utf-8") ).hexdigest()
     return hash
