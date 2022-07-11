@@ -17,7 +17,7 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-HOST = socket.gethostbyname("tumexzellenz.cf")
+HOST = socket.gethostbyname("") #or IPv4/v6 Address
 PORT = 42960
 opt_level = "O2"
 BUFFER_SIZE = 4096
@@ -43,7 +43,7 @@ file_size = os.path.getsize(filename)
 encrypted_filename = "{}.aes".format(filename)
 encrypted_file = shutil.copy(filename,encrypted_filename)
 
-key = "c0b2a84be4caa1f21687e3f31113dd28a38cec505ee53c782da97c8ac9564b8b" #generated with Safe-Cryption MouseMovement
+key = "" #Secret for protecting WebServer
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 try:
